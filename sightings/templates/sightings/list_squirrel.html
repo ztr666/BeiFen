@@ -11,7 +11,7 @@
     <title>List of all Squirrels</title>
   </head>
   <body>
-    <p><a href="/sightings/add/", class="button">Add another squirrel</a></p>
+    <p><a href="/sightings/add", class="button">Add another squirrel</a></p>
     <table class="table">
       <thead>
         <tr>
@@ -45,7 +45,7 @@
         <tr>
 	  <td>{{squirrel.Latitude}}</td>
           <td>{{squirrel.Longitude}}</td>
-	  <td><a href="/sightings/detail/">{{squirrel.Unique_Squirrel_ID}}</a></td>
+	  <td><a href="/sightings/{{squirrel.Unique_Squirrel_ID}}/detail">{{squirrel.Unique_Squirrel_ID}}</a></td>
 	  <td>{{squirrel.Shift}}</td>
 	  <td>{{squirrel.Date}}</td>
 	  <td>{{squirrel.Age}}</td>
